@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+  }
+  
+  #originalPost {
+    background-color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    z-index: 2;
+  }
+  
+  h1 {
+    margin: 0;
+    font-weight: lighter;
+  }
+  
+  #author {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: lighter;
+  }
+  
+  #commentsSection {
+    padding: 20px 20px 20px;
+    background-color: #CCC;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    overflow-y: auto;
+  }
+  
+  .submitBtn {
+    background: transparent;
+    border: none;
+    color: lightblue;
+  }
+  
+  .edit-input {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .comment {
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    position: relative;
+    border-radius: 1px;
+  }
+  
+  .comment-avatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  
+  .comment-avatar img {
+    height: 50px;
+  }
+  
+  .comment .actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .comment .actions button {
+    border: none;
+    background-color: transparent;
+    color: lightBlue;
+  }
+  
+  .comment .comment-content {
+    margin-left: 30px;
+  }
+  
+  .comment h3 {
+    font-size: 12px;
+    color: black;
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  
+  .comment .comment-content p {
+    margin: 0;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .editBtn,
+  .deleteBtn {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+
+  .deleteBtn {
+    margin-right: 10px;
+  }
+  
+  #createComment {
+    position: fixed;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 2;
+  }
+  
+  #createComment form {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+  }
+  
+  #createComment form .form-group {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  #createComment form #displayName {
+    width: 120px;
+    margin-right: 5px;
+  }
+  
+  #createComment form #commentText {
+    width: 100%;
+  }
+  
+  #createComment form button {
+    border: none;
+    background-color: transparent;
+    color: lightBlue;
+    padding: 5px;
+  }
